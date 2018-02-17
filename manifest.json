@@ -1,0 +1,14 @@
+{
+  "name": "Mateusz Michnowicz - Graphic Designer, UI/UX Designer",
+  "short_name": "Mateusz Michnowicz",
+  "lang": "pl",
+  "start_url": "/index.html",
+  "display": "browser",
+  "orientation": "portrait",
+  "theme_color": "#FFC519",
+  "icons": [
+    {
+      "src": "favicon.png"
+    }
+  ]
+}

@@ -1,0 +1,345 @@
+/*! Mateusz Michnowicz - portfolio - ustawienia dla wersji mobilnej | autor: Mateusz "michno" Michnowicz | mateusz.michnowicz@gmail.com !*/
+
+$yellow: #FFC519;
+$platinum: #E6E8E6;
+$white: #FFFFFF;
+$black: #191919;
+$gray: #CED0CE;
+$blue: #235789;
+
+@media only screen and (min-width: 1600px) {
+    
+    .row {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+    body {
+        .header-main {
+            padding: 2rem 2rem 0 2rem;
+
+            p {
+                padding: 1.5rem;
+            }
+
+
+            .header-main-image {
+                .main-image {
+                    img {
+                        top: 3rem;
+                    }
+                }
+            }
+        }
+    }
+    .mobile-nav {
+        display: none;
+    }
+    
+
+    .behance-list ul,
+    .instagram-list ul {
+        flex-wrap: nowrap;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    body {
+        .header-main {
+            .header-main-image {
+                .main-image {
+                    img {
+                        top: 6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        .mobile-nav {
+            display: none;
+        }
+
+        .behance-list ul,
+        .instagram-list ul {
+            flex-wrap: nowrap;
+        }
+        .header-main {
+            padding: 2rem 2rem 0;
+
+            .header-main-content {
+                padding: 1rem 1rem 0;
+
+                p {
+                    padding: 1.5rem;
+                    font-size: 1.125rem;
+                }
+            }
+
+            .header-main-image {
+                .main-image {
+                    img {
+                        top: 3rem;
+                    }
+                }
+            }
+        }
+
+        .main {
+            .headline {
+                em {
+                    display: block;
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    body {
+
+        .mobile-nav {
+            display: none;
+        }
+
+        .nav {
+            .nav-logo {
+                h2 {
+                    display: none;
+                }
+            }
+        }
+
+        .header-main {
+            padding: 2rem 1rem 0 2rem;
+
+            .header-main-content {
+                padding: 1rem 1rem 0;
+
+                p {
+                    padding: 1.5rem;
+                    font-size: 1.125rem;
+                }
+            }
+
+
+            .header-main-image {
+                .main-image {
+                    img {
+                        width: 85%;
+                        top: 8rem;
+                        left: 2rem;
+                    }
+                }
+            }
+        }
+
+        .main {
+            .headline {
+                em {
+                    display: block;
+                }
+            }
+
+        }
+
+        .behance-list {
+            ul {
+                flex-wrap: wrap;
+
+                li.behance-item {
+                    max-width: 50%;
+                }
+            }
+        }
+
+        .instagram-list {
+            ul {
+                flex-wrap: wrap;
+
+                li.insta-item {
+                    max-width: 33.3%;
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .nav {
+        display: none;
+    }
+
+    body {
+
+        a.btn {
+            width: 100%;
+            text-align: center;
+        }
+
+        .header-main {
+            padding: 0;
+
+            .row {
+                margin: 0;
+            }
+
+            .header-main-content {
+                padding: 0;
+            }
+
+            .header-data {
+                padding: 2rem 1.5rem 0rem;
+            }
+
+            p {
+                padding: 1.5rem 2rem;
+                font-size: 1.125rem;
+            }
+        }
+
+        .header-subpage {
+
+            .header-subpage__info {
+                padding: 0;
+
+            }
+            .header-subpage__text {
+                padding: 0;
+
+                p {
+                    padding: 0.5rem 0rem !important;
+                }
+            }
+        }
+
+        main.main {
+            margin: 1rem;
+            overflow: hidden;
+            padding: 0;
+
+            .headline {
+                em {
+                    display: block;
+                }
+
+                .headline-link {
+                    margin-top: 2rem;
+                    text-align: left;
+
+                    a {}
+                }
+            }
+
+            .behance-list ul,
+            .instagram-list ul {
+                //flex-direction: column;
+                li {
+                    padding: 1rem;
+                    a:hover {
+                        transform: none !important;
+                    }
+
+                    &:hover img {
+                        transform: none !important;
+                    }
+                }
+            }
+
+            .behance-list {
+                ul {
+                    li {
+                        max-width: 100%;
+                        a {
+                            .item-data {
+                                span {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+
+            .instagram-list {
+                ul {
+                    flex-wrap: wrap;
+
+                    li.insta-item {
+                        max-width: 100%;
+                    }
+                }
+            }
+
+            .project {
+                .project-item {
+                    &:first-of-type {
+                        padding: 0 1rem 2rem;
+                        border-right: 0;
+                        border-bottom: 1px solid $gray;
+                    }
+
+                    &:last-of-type {
+                        padding: 2rem 1rem 0;
+                    }
+                }
+            }
+        }
+
+        footer.footer {
+            padding: 2rem 1rem 5rem;
+
+            a.top {
+                margin-top: 2rem;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        .mobile-nav {
+            position: fixed;
+            z-index: 15;
+            width: 100%;
+            background: $black;
+            bottom: 0;
+            display: block;
+
+            ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: inline-flex;
+                width: 100%;
+                align-items: stretch;
+
+                li {
+                    //display: inline-flex;
+                    text-align: center;
+                    padding: 0.5rem;
+                    width: 100%;
+
+                    font-size: 0.875rem;
+                }
+            }
+            a {
+                color: #fff;
+                text-decoration: none;
+
+                svg {
+                    stroke: $yellow;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
